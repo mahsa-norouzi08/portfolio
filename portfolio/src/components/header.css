@@ -1,0 +1,21 @@
+li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 1vmax;
+    background-color: #154042;
+    color: #ffffff;
+    padding: 1.25vmax;
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+li:hover{
+    background-color: #11201e;
+}
+
+ul{
+    background-color: #154042;
+    height: 4vmax;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
