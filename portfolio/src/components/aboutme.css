@@ -1,110 +1,158 @@
-
-
-
 @media only screen and (max-width: 768px) {
-    img{
-        border-radius: 15vmax;
-        border: 2px solid #154042;
-        width: 200px;
-        margin-top: 4vmax;
-        margin-bottom: 2vmax;
-       }
-       
-    .container {
-        background-color: #d4d6d5;
-        margin-top: 0;
-    }
+  .profimg {
+    border-radius: 20vmax;
+    border: 2px solid #154042;
+    width: 200px;
+    margin-top: 4vmax;
+    margin-bottom: 2vmax;
+  }
 
-    hr{
-        height: 0.01vmax;
-        width: 80%; 
-        background-color:black;
-        color: black; 
-    }
+  .container {
+    background-color: #d4d6d5;
+    margin-top: 0;
+    padding-bottom: 4%;
+  }
 
-    h2{
-        margin-top: 0;
-    }
+  .bio {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    h1{
-        margin-bottom: 1vmax;
-        margin-top: 4vmax;
-    }
+  hr {
+    height: 0.01vmax;
+    width: 80%;
+    background-color: black;
+    color: black;
+  }
 
-    p{
-        margin-left: 5%;
-        margin-right: 5%;
-        text-align: center;
-    }
-    .icon{
-        display: inline-block !important;
-        list-style-type: none;
-        margin: 0.2vmax;
-        font-size: 20pt;
-        color: #154042;
-    }
+  h2 {
+    margin-top: 0;
+  }
+
+  h1 {
+    margin-bottom: 1vmax;
+    margin-top: 4vmax;
+  }
+
+  p {
+    text-justify: distribute;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+  }
+  .icon {
+    display: inline-block !important;
+    list-style-type: none;
+    margin: 0.2vmax;
+    font-size: 20pt;
+    color: #154042;
+  }
+
+  .contact-items {
+    display: inline !important;
+    list-style-type: none;
+  }
+
+  .icon-contact {
+    color: #154042;
+    display: inline-block;
+    font-size: 15pt;
+  }
+
+  .text-contact {
+    display: inline-block;
+    margin-left: 2%;
+  }
+
+  .contact {
+    margin-top: 2%;
+    align-items: left;
+    gap: 15px;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 768px) {
-    img{
-        border-radius: 10vmax;
-        border: 2px solid #154042;
-        width: 200px;
-        margin-top: 3vmax;
-        left: 20vmax;
-        margin-bottom: 2vmax;
-       }
+  .profimg {
+    border-radius: 20vmax;
+    border: 2px solid #154042;
+    width: 200px;
+    margin-top: 3vmax;
+    left: 20vmax;
+    margin-bottom: 2vmax;
+  }
 
-    .container {
-        background-color: #d4d6d5;
-        margin-top: 0;
-        display: flex;
-    }
-    .bio{
-        height: 100%;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .picture{
-        height: 100%;
-        width: 30%;
-        margin-left: 0;
-        /* display: flex;
+  .container {
+    background-color: #d4d6d5;
+    margin-top: 0;
+    display: flex;
+  }
+  .bio {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .picture {
+    height: 100%;
+    width: 30%;
+    margin-left: 0;
+    /* display: flex;
         flex-direction: column;
         align-items: center; */
+  }
 
-    }
+  hr {
+    height: 0.01vmax;
+    width: 80%;
+    background-color: black;
+    margin-left: 0;
+    color: black;
+  }
 
-    hr{
-        height: 0.01vmax;
-        width: 80%; 
-        background-color:black; 
-        margin-left: 0;
-        color: black;
-    }
+  h2 {
+    margin-top: 0;
+  }
 
-    h2{
-        margin-top: 0;
-    }
+  h1 {
+    margin-bottom: 1vmax;
+    margin-top: 4vmax;
+  }
 
-    h1{
-        margin-bottom: 1vmax;
-        margin-top: 4vmax;
-    }
+  p {
+    text-justify: distribute;
+    text-align: justify;
+    margin-right: 25%;
+    font-size: 15pt;
+  }
 
-    p{
-        margin-right: 25%;
-        text-align: left;
-        font-size: 15pt;
-    }
-
-    .icon{
-        display: inline-block;
-        list-style-type: none;
-        margin: 0.2vmax;
-        font-size: 20pt;
-        color: #154042;
-    }
+  .icon {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.2vmax;
+    font-size: 20pt;
+    color: #154042;
+  }
+  .icon-contact {
+    margin: 0.2vmax;
+    font-size: 20pt;
+    color: #154042;
+    float: left;
+  }
+  .p-contact {
+    margin-top: 0.2vmax;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 15pt;
+  }
+  .contact {
+    width: 100%;
+  }
 }

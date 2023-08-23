@@ -1,0 +1,80 @@
+@media only screen and (max-width: 768px) {
+  .edudiv {
+    align-items: center;
+    background-color: #d5e9dd;
+    margin-top: 0;
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+
+  .titlediv {
+    align-items: center;
+    height: 5vmax;
+    padding-top: 3vmax;
+  }
+
+  .title-edu {
+    border: 0.2vmax solid #154042;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+    color: #154042;
+    padding-top: 2%;
+    font-size: 3vmax;
+  }
+
+  .div-edu {
+    /* display: inline-block;
+        list-style-type: none; */
+    border: 0.2vmax solid #154042;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding-top: 2%;
+    color: #154042;
+    margin-top: 10%;
+    width: 80%;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .edudiv {
+    align-items: center;
+    background-color: #d5e9dd;
+    margin-top: 0;
+    padding-bottom: 3%;
+  }
+
+  .titlediv {
+    align-items: center;
+    height: 5vmax;
+    padding-top: 3vmax;
+  }
+
+  .title-edu {
+    border: 0.2vmax solid #154042;
+    margin: auto;
+    width: 20%;
+    height: 60%;
+    text-align: center;
+    padding: 1%;
+    color: #154042;
+    font-size: 2vmax;
+  }
+
+  .div-edu {
+    display: inline-block;
+    list-style-type: none;
+    border: 0.2vmax solid #154042;
+    margin-left: 2vmax;
+    margin-right: 2vmax;
+    text-align: center;
+    padding-top: 1vmax;
+    color: #154042;
+    margin-top: 2vmax;
+    width: 35%;
+  }
+}
