@@ -21,9 +21,11 @@ function App() {
         <Education />
       </div>
       <div>
-      <div className="titlediv">
-        <h1 id="colorskill" className="title-edu">SKILLS</h1>
-      </div>
+        <div className="titlediv">
+          <h1 id="colorskill" className="title-edu">
+            SKILLS
+          </h1>
+        </div>
         <Card img={Javascript} alt={"javascript"} description={"Javascript"} />
         <Card img={Html} alt={"html"} description={"Html"} />
         <Card img={Html} alt={"html"} description={"Html"} />

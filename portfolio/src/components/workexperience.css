@@ -1,41 +1,94 @@
-/* Content */
-.vert-hr {
-  position: relative;
-
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 14px;
-    bottom: 6px;
-    left: -13.1px;
-    border-left: 1px solid #222;
-    transform: translate(-50%);
+@media only screen and (max-width: 768px) {
+  .container-experievce {
+    background-image: url("../static/BACKWORK.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
   }
-}
-.title-dot {
-  margin-left: -27px;
-  font-size: 12px;
-  z-index: 99;
-  color: #222;
-  vertical-align: middle;
-  &:last-child {
-    font-size: 0.4em;
-  }
-  &-sm {
-    left: 4px;
-    margin-left: -27px;
-    font-size: 10px;
-    z-index: 99;
-    color: #222;
-    vertical-align: middle;
 
-    &:last-child {
-      font-size: 0.5em;
+  #work-id {
+    background-color: rgba(212, 214, 213, 0.95);
+  }
+
+  .div-experience {
+    /* display: inline-block; */
+    background-color: rgba(212, 214, 213, 0.95);
+    border-left: 0.5vmax solid #154042;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
+  #h1-font {
+    font-size: 2.5vmax;
+  }
+  #h2-font {
+    font-size: 2vmax;
+  }
+
+  #id-hr {
+    width: 90%;
+  }
 }
-.title {
-  margin-left: -22px;
-  color: #0b3c49;
+
+@media only screen and (min-width: 768px) {
+  .container-experievce {
+    background-image: url("../static/BACKWORK.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+  }
+
+  #work-id {
+    background-color: rgba(212, 214, 213, 0.95);
+  }
+
+  .div-experience {
+    display: inline-block;
+    background-color: rgba(212, 214, 213, 0.95);
+    border-left: 0.5vmax solid #154042;
+    width: 35%;
+    margin-left: 10%;
+    text-align: left;
+    margin: 5%;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #h1-font {
+    font-size: 2.5vmax;
+  }
+  #h2-font {
+    font-size: 2vmax;
+  }
+
+  #id-p {
+    margin-right: 15%;
+  }
+
+  #id-hr {
+    width: 90%;
+  }
 }
