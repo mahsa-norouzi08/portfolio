@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import "../components/aboutme.css";
 import Wallpaper from "../static/aboutwallpaper.png";
-import {VscGithub} from "react-icons/vsc";
-import {RiTelegramLine} from "react-icons/ri";
-import {MdShareLocation} from "react-icons/md";
-import {TiSocialLinkedinCircular} from "react-icons/ti";
+import { SocialIcon } from "react-social-icons";
 
 export default function AboutMe() {
-  
   return (
-    <div className="container">
+    <div className="about-me">
+      <h1 className="bacground-title">About</h1>
       <div className="node-container">
         <img className="node" src={Wallpaper} alt="Profile" />
       </div>
@@ -27,12 +23,19 @@ export default function AboutMe() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div className="contact">
-          <div className="contact-items">
-          <VscGithub className="octocat" fontSize={19} id="octocat"/>
-          <RiTelegramLine className="icon" fontSize={22}/>
-          <MdShareLocation className="icon" fontSize={22}/>
-          <TiSocialLinkedinCircular className="icon" fontSize={24}/>
-          </div>
+          <SocialIcon className="social-icon" url="https://email.com" />
+          <SocialIcon
+            className="social-icon"
+            url="https://www.linkedin.com/in/mahsa-norouzi08/"
+          />
+          <SocialIcon
+            className="social-icon"
+            url="https://github.com/mahsanorouzi39"
+          />
+          <SocialIcon
+            className="social-icon"
+            url="https://telegram.me/mahsa_norouzi08"
+          />
         </div>
       </div>
     </div>
