@@ -29,19 +29,10 @@ export default function AboutMe() {
     setHoverLinkedin(!hoverLinkedin);
   };
 
-  // const personal = [
-  //   {
-  //     icon : Mobile
-  //   },
-  //   {
-
-  //   },
-  //   {}
-  // ]
   return (
     <div className="container">
       <div className="picture">
-        <img  className="profimg" src={profilepic} alt="Profile" />
+        <img className="profimg" src={profilepic} alt="Profile" />
         <br />
         {hoverInstagram ? (
           <FaInstagramSquare className="icon" onMouseLeave={mouseInstagram} />
@@ -76,15 +67,15 @@ export default function AboutMe() {
         </p>
         <div className="contact">
           <div className="contact-items">
-            <FaEnvelope  className="icon-contact"/>
+            <FaEnvelope className="icon-contact" />
             <p className="text-contact">Mahsa.noroozi80@gmail.com</p>
-          </div >
+          </div>
           <div className="contact-items">
-            <FaMobile  className="icon-contact"/>
+            <FaMobile className="icon-contact" />
             <p className="text-contact">036998587545</p>
           </div>
           <div className="contact-items">
-            <FaMapMarkerAlt  className="icon-contact"/>
+            <FaMapMarkerAlt className="icon-contact" />
             <p className="text-contact">Tehran, Iran</p>
           </div>
         </div>

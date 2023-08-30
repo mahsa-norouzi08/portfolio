@@ -22,7 +22,7 @@ export default function Experience({}) {
       </div>
       <div className="div-experience">
         <h1 id="h1-font">Frontend Developer</h1>
-        <h2 id="h2-font">Goldskan</h2>
+        <h2 id="h2-font">Goldscan</h2>
         <hr id="id-hr"/>
         <p id="id-p">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
