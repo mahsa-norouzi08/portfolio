@@ -12,6 +12,7 @@ const data = [
   { label: "About me", link: "/aboutme" },
   { label: "Skills", link: "/skills" },
   { label: "Experience", link: "/experience" },
+  { label: "Education", link: "/edu" },
 ];
 
 const Navbar = () => {
@@ -28,6 +29,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
+      <br className="br-nav"/>
       {sidebar ? (
         <Box sx={{ display: "flex" }} className="sidebar">
           <ThemeProvider

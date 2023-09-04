@@ -5,7 +5,10 @@ import {
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
-import mapna from "../static/gold.jpeg";
+import GoldScan from "../static/gold.jpeg";
+import Mapna from "../static/mapna.jfif";
+import Advice from "../static/advice.png";
+import Gamein from "../static/GAMEIN.jfif";
 
 export const textVariant = (delay) => {
   return {
@@ -27,67 +30,78 @@ export const textVariant = (delay) => {
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "",
-    icon: mapna,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: ["officia deserunt mollit anim id est laborum.."],
-  },
-  {
-    title: "React.js Developer",
-    company_name: "",
-    icon: mapna,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "FRONTEND DEVELOPER",
+    company_name: "GoldScan",
+    icon: GoldScan,
+    iconBg: "#fff",
+    date: "Jun 2023 - Present",
     points: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-      "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-      "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
+      "Developing and maintaining client side rendering of the company web apllication",
+      "Learning frontend technologies as an intern engineer",
     ],
   },
   {
-    title: "React.js Developer",
-    company_name: "",
-    icon: mapna,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "AEROSPACE ENGINEER",
+    company_name: "Mapna Group (Air Engine)",
+    icon: Mapna,
+    iconBg: "#fff",
+    date: "Sep 2022 - Aug 2023",
     points: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-      "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-      "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.",
+      "Working as an aerospace engineer in FADEC department",
+      "Control performance of aero engine systems",
     ],
+  },
+  {
+    title: "DIGITAL MARKETER SPECIALIST",
+    company_name: "Gamein",
+    icon: Gamein,
+    iconBg: "#fff",
+    date: "Aug 2022 - Jun 2023",
+    points: ["campaign manager", "social media advertising manager"],
+  },
+  {
+    title: "DIGITAL MARKETER SPECIALIST",
+    company_name: "ADVICE",
+    icon: Advice,
+    iconBg: "#fff",
+    date: "Jun 2022 - Aug 2022",
+    points: ["campaign manager", "social media advertising manager"],
   },
 ];
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
+      className="vertical-timeline-element--work"
       contentStyle={{
-        background: "gray",
-        color: "#fff",
+        background: "#eeeeee",
+        color: "#000",
+        fontFamily: "Source Code Pro",
       }}
-      contentArrowStyle={{ borderRight: "7px solid #fff" }}
+      contentArrowStyle={{ borderRight: "10px solid #eeeeee" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{ background: experience.iconBg, backgroundColor: "white" }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
             width={60}
             src={experience.icon}
             alt={experience.company_name}
-            style={{ borderRadius: "20vmax",  }}
+            style={{ borderRadius: "20vmax" }}
           />
         </div>
       }
     >
       <div>
-        <h3 className="text-black text-[24px] font-bold">{experience.title}</h3>
+        <h3
+          className="text-black text-[24px] font-bold "
+          style={{ fontWeight: "bold" }}
+        >
+          {experience.title}
+        </h3>
         <p
-          className="text-secondary text-[16px] font-semibold"
-          style={{ margin: 0 }}
+          className="text-black text-[16px] font-semibold "
+          style={{ margin: 0, fontWeight: "bold" }}
         >
           {experience.company_name}
         </p>
@@ -110,10 +124,13 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
+      <h1 className="bacground-title" id="id-work">
+        Experience
+      </h1>
       <motion.div variants={textVariant()}></motion.div>
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
+        <VerticalTimeline className="vertical-timeline">
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}

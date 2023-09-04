@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages";
 import AboutMe from "./pages/aboutme";
 import Experience from "./pages/expereince";
+import Skill from "./pages/skills";
+import Education from "./pages/edu";
 
 function App() {
   return (
@@ -20,9 +22,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/aboutme" element={<AboutMe />} />
-          {/* <Route path='/skills' element={< />} /> */}
+          <Route path='/skills' element={<Skill/>} />
           <Route path="/experience" element={<Experience />} />
-          {/* <Route path='/sign-up' element={<SignUp />} /> */}
+          <Route path='/edu' element={<Education />} />
         </Routes>
       </Router>
     </div>

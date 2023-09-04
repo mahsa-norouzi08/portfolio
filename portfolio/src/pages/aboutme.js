@@ -23,18 +23,29 @@ export default function AboutMe() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div className="contact">
-          <SocialIcon className="social-icon" url="https://email.com" />
+          <SocialIcon
+            className="social-icon"
+            url="https://email.com"
+            bgColor="black"
+            style={{ height: 25, width: 25, marginRight: 3 }}
+          />
           <SocialIcon
             className="social-icon"
             url="https://www.linkedin.com/in/mahsa-norouzi08/"
+            bgColor="black"
+            style={{ height: 25, width: 25, marginRight: 3 }}
           />
           <SocialIcon
             className="social-icon"
             url="https://github.com/mahsanorouzi39"
+            bgColor="black"
+            style={{ height: 25, width: 25, marginRight: 3 }}
           />
           <SocialIcon
             className="social-icon"
             url="https://telegram.me/mahsa_norouzi08"
+            bgColor="black"
+            style={{ height: 25, width: 25, marginRight: 3 }}
           />
         </div>
       </div>
