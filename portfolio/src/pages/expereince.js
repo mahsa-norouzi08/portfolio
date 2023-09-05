@@ -30,6 +30,7 @@ export const textVariant = (delay) => {
 
 const experiences = [
   {
+    id: 1,
     title: "FRONTEND DEVELOPER",
     company_name: "GoldScan",
     icon: GoldScan,
@@ -41,6 +42,7 @@ const experiences = [
     ],
   },
   {
+    id: 2,
     title: "AEROSPACE ENGINEER",
     company_name: "Mapna Group (Air Engine)",
     icon: Mapna,
@@ -52,6 +54,7 @@ const experiences = [
     ],
   },
   {
+    id: 3,
     title: "DIGITAL MARKETER SPECIALIST",
     company_name: "Gamein",
     icon: Gamein,
@@ -60,6 +63,7 @@ const experiences = [
     points: ["campaign manager", "social media advertising manager"],
   },
   {
+    id: 4,
     title: "DIGITAL MARKETER SPECIALIST",
     company_name: "ADVICE",
     icon: Advice,
@@ -79,7 +83,7 @@ const ExperienceCard = ({ experience }) => {
         fontFamily: "Source Code Pro",
       }}
       contentArrowStyle={{ borderRight: "10px solid #eeeeee" }}
-      date={experience.date}
+      date={<p style={{ textAlign: experience.id % 2 ? "left" : "right" }}>{experience.date}</p>}
       iconStyle={{ background: experience.iconBg, backgroundColor: "white" }}
       icon={
         <div className="flex justify-center items-center w-full h-full">

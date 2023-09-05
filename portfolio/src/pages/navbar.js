@@ -13,6 +13,7 @@ const data = [
   { label: "Skills", link: "/skills" },
   { label: "Experience", link: "/experience" },
   { label: "Education", link: "/edu" },
+  { label: "Language", link: "/language" },
 ];
 
 const Navbar = () => {

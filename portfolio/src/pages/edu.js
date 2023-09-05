@@ -1,73 +1,47 @@
 import React from "react";
-import { IoLogoJavascript, IoLogoPython } from "react-icons/io";
-import { FaReact } from "react-icons/fa";
-import { TbBrandHtml5, TbBrandCss3 } from "react-icons/tb";
-const Skills = [
+import edu from "../static/edu.jpg";
+import sharif from "../static/sharif.png";
+
+const educations = [
   {
-    title: "JAVASCRIPT",
-    icon: <IoLogoJavascript />,
-    explaine: [
-      "Developing and maintaining client side rendering of the company web apllication",
-    ],
-  },
-  {
-    title: "PYTHON",
-    icon: <IoLogoPython />,
-    explaine: [
-      "Developing and maintaining client side rendering of the company web apllication",
-      "Learning frontend technologies as an intern engineer",
-    ],
-  },
-  {
-    title: "HTML",
-    icon: <TbBrandHtml5 />,
-    explaine: [
-      "Developing and maintaining client side rendering of the company web apllication",
-      "Learning frontend technologies as an intern engineer",
-    ],
-  },
-  {
-    title: "CSS",
-    icon: <TbBrandCss3 />,
-    explaine: [
-      "Developing and maintaining client side rendering of the company web apllication",
-      "Learning frontend technologies as an intern engineer",
-    ],
-  },
-  {
-    title: "REACT",
-    icon: <FaReact />,
-    explaine: [
-      "Developing and maintaining client side rendering of the company web apllication",
-      "Learning frontend technologies as an intern engineer",
-    ],
+    title: "Aerospace Engineering",
+    icon: sharif,
+    company:"Sharif University of Technology",
+    date: "2019 - present",
   },
 ];
 
-const SkillCard = ({ skill }) => {
+const EducationCard = ({ education }) => {
   return (
-    <div className="skill-card">
-      <div className="skill-icon">{skill.icon}</div>
-      <h3 style={{ fontWeight: "bold" }}>{skill.title}</h3>
-      <p>{skill.explaine}</p>
+    <div className="skill-card" id="id-edu">
+      <img
+        width={60}
+        src={education.icon}
+        alt={education.title}
+        style={{ borderRadius: "20vmax" }}
+      />
+      <br />
+      <h3 style={{ fontWeight: "bold" }}>{education.title}</h3>
+      <p>{education.company}</p>
+      <p>{education.date}</p>
     </div>
   );
 };
 
-const Skill = () => {
+const Education = () => {
   return (
     <>
-      <h1 className="bacground-title" id="id-skill">
-        Skill
+      <h1 className="bacground-title" id="id-education">
+        Education
       </h1>
-
-      <div className="skill-flex">
-        {Skills.map((skill, index) => (
-          <SkillCard key={index} skill={skill} />
+      <img src={edu} alt="edu-cap" width={500} className="edu-pic"/>
+      <div className="skill-flex" id="id-edu-parent">
+        {educations.map((education, index) => (
+          <EducationCard key={index} education={education} />
         ))}
       </div>
     </>
   );
 };
 
-export default Skill;
+export default Education;

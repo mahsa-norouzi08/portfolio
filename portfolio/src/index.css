@@ -50,6 +50,15 @@ body {
     font-size: 25vmax;
     margin-top: 5vmax;
     margin-left: 25%;
+    position: fixed;
+  }
+
+  .avatar {
+    float: left;
+    margin-left: -25vmax;
+    margin-top: 9.5vmax;
+    max-width: 70vmax;
+    max-height: 35vmax;
   }
 }
 
@@ -88,6 +97,11 @@ body {
     font-size: 27vmax;
     margin-top: 5vmax;
     margin-left: 10%;
+    position: fixed;
+  }
+
+  .avatar {
+    display: none;
   }
 }
 
@@ -120,13 +134,7 @@ body {
   position: fixed;
 }
 
-.avatar {
-  float: left;
-  margin-left: -25vmax;
-  margin-top: 12.5vmax;
-  max-width: 70vmax;
-  max-height: 35vmax;
-}
+
 
 .node {
   max-width: 65%;
@@ -173,6 +181,10 @@ hr {
   justify-content: center;
 }
 
+#id-home-parent{
+  margin-top: 0;
+}
+
 .skill-card {
   display: flex;
   flex-direction: column;
@@ -187,8 +199,83 @@ hr {
   font-size: 13pt;
 }
 
+#id-education {
+  margin-top: 0;
+  font-size: 19vmax;
+  margin-bottom: 0;
+  position: fixed;
+}
+
+#id-page {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 1vmax;
+  margin: 2vmax;
+}
+
 .work-icon {
   background-color: #000 !important;
+}
+
+#id-edu {
+  margin-top: -2.2vmax;
+  width: 100%;
+  /* position: fixed; */
+}
+
+.edu-pic {
+  margin-top: 2.5vmax;
+  margin-bottom: 0;
+  margin-left: -16vmax;
+  position: fixed;
+  z-index: -1;
+}
+
+#id-edu-parent {
+  margin-top: 30vmax;
+  z-index: -2;
+}
+
+#id-lan {
+  font-size: 19.5vmax;
+  margin-top: 0;
+  margin-left: 4vmax;
+  opacity: 8%;
+  position: fixed;
+}
+
+#id-gu {
+  font-size: 19.5vmax;
+  margin-top: 0;
+  margin-left: 35vmax;
+  opacity: 4%;
+  position: fixed;
+}
+
+#id-age {
+  font-size: 19.5vmax;
+  margin-top: 0;
+  margin-left: 58vmax;
+  opacity: 8%;
+  position: fixed;
+}
+
+.lang-parent {
+  margin-left: 2vmax;
+}
+
+.div-lang {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 3.5vmax; */
+  position: fixed;
+}
+
+.lan-pic {
+  margin-top: -2vmax;
+  z-index: -1;
+  position: fixed;
+  margin-left: -18.7vmax;
+  width: 33vmax;
 }
 
 /* .vertical-timeline.vertical-timeline-custom-line::before {

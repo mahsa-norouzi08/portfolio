@@ -13,6 +13,7 @@ import AboutMe from "./pages/aboutme";
 import Experience from "./pages/expereince";
 import Skill from "./pages/skills";
 import Education from "./pages/edu";
+import Language from "./pages/language";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/skills' element={<Skill/>} />
           <Route path="/experience" element={<Experience />} />
           <Route path='/edu' element={<Education />} />
+          <Route path="/language" element={<Language />} />
         </Routes>
       </Router>
     </div>
