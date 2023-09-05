@@ -5,6 +5,9 @@ import skills from "../static/skills.png";
 import education from "../static/education.png";
 import expereince from "../static/experience.png";
 import language from "../static/lan1.png";
+import resume from "../static/resume.png";
+import pdf from "../static/MahsaNorouzi.pdf";
+import { useState } from "react";
 
 const pages = [
   {
@@ -32,17 +35,30 @@ const pages = [
     title: "My experience",
     link: "/experience",
   },
+  {
+    pic: resume,
+    title: "My resume file",
+    link: pdf,
+  },
 ];
 
 const PageCard = ({ page }) => {
+  const [hover, setHover] = useState(false);
   return (
     <a className="skill-card" id="id-page" href={page.link}>
-      <img
-        width={300}
-        src={page.pic}
-        alt={page.title}
-        style={{ borderRadius: "40px" }}
-      />
+      {hover ? (
+        <button className="page-button" onMouseLeave={() => setHover(false)}>
+          {page.title}
+        </button>
+      ) : (
+        <img
+          width={300}
+          src={page.pic}
+          alt={page.title}
+          style={{ borderRadius: "1vmax" }}
+          onMouseOver={() => setHover(true)}
+        />
+      )}
     </a>
   );
 };

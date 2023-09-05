@@ -37,7 +37,7 @@ export default function AboutMe() {
           />
           <SocialIcon
             className="social-icon"
-            url="https://github.com/mahsanorouzi39"
+            url="https://github.com/mahsa-norouzi08"
             bgColor="black"
             style={{ height: 25, width: 25, marginRight: 3 }}
           />
